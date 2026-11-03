@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Caché de llamadas al LLM del Ejercicio 2 (se regenera al ejecutar)
+ejercicio_2/cache_llm.json

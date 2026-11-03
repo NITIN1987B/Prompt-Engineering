@@ -6,7 +6,8 @@ Prácticas del Máster de IA - Prompt Engineering
 ```
 ├─ pyproject.toml · uv.lock · .python-version · requirements.txt
 ├─ .env.example
-└─ ejercicio_1/   notebook y CSV del Ejercicio 1 (Airbnb, Gemini)
+├─ ejercicio_1/   notebook y CSV del Ejercicio 1 (Airbnb, Gemini)
+└─ ejercicio_2/   notebook, CSV de entrada y CSV de resultados del Ejercicio 2 (reseñas de videojuegos, pipeline con dos LLMs)
 ```
 
 ## Instalación
@@ -37,8 +38,14 @@ el repositorio es público.
 
 ## Ejecución
 
-Abre `ejercicio_1/Ejercicio_1_Gemini_Groq.ipynb` en VS Code o Jupyter y elige el kernel
-de `.venv`. Las rutas de los CSV son relativas al notebook.
+Abre `ejercicio_1/Ejercicio_1_Gemini_Groq.ipynb` o `ejercicio_2/Ejercicio 2.ipynb` en VS Code
+o Jupyter y elige el kernel de `.venv`. Las rutas de los CSV son relativas al notebook y las
+celdas se ejecutan en orden.
+
+Ambos notebooks llaman a la API de Gemini con tu `GOOGLE_API_KEY` (el Ejercicio 2 hace unas 30
+llamadas). El Ejercicio 2 guarda cada respuesta en `ejercicio_2/cache_llm.json` (ignorado por git)
+para no repetir llamadas al reejecutar. Los modelos Flash devuelven a veces 503 por alta demanda;
+el notebook reintenta con espera creciente.
 
 Si cambias dependencias, regenera `requirements.txt`:
 

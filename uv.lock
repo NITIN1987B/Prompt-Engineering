@@ -783,6 +783,7 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "google-genai" },
+    { name = "httpx" },
     { name = "ipykernel" },
     { name = "pandas" },
     { name = "pydantic" },
@@ -792,6 +793,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "google-genai", specifier = ">=2.34.0" },
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "ipykernel", specifier = ">=7.4.0" },
     { name = "pandas", specifier = ">=3.1.0" },
     { name = "pydantic", specifier = ">=2.14.2" },
