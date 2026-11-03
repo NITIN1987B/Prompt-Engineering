@@ -785,6 +785,7 @@ dependencies = [
     { name = "google-genai" },
     { name = "ipykernel" },
     { name = "pandas" },
+    { name = "pydantic" },
     { name = "python-dotenv" },
 ]
 
@@ -793,6 +794,7 @@ requires-dist = [
     { name = "google-genai", specifier = ">=2.34.0" },
     { name = "ipykernel", specifier = ">=7.4.0" },
     { name = "pandas", specifier = ">=3.1.0" },
+    { name = "pydantic", specifier = ">=2.14.2" },
     { name = "python-dotenv", specifier = ">=1.2.4" },
 ]
 

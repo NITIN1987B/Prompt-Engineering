@@ -18,7 +18,7 @@ uv sync
 ```
 
 Crea `.venv` con Python 3.12 e instala las dependencias de `uv.lock`
-(`pandas`, `python-dotenv`, `google-genai`, `ipykernel`).
+(`pandas`, `python-dotenv`, `google-genai`, `pydantic`, `ipykernel`).
 
 Sin uv (necesita Python 3.12 o superior): `python -m venv .venv`, activarlo y
 `pip install -r requirements.txt`.
@@ -32,9 +32,8 @@ cp .env.example .env    # PowerShell: Copy-Item .env.example .env
 Rellena `GOOGLE_API_KEY` en `.env` (clave de [Google AI Studio](https://aistudio.google.com/)).
 `.env` está ignorado por git: no lo subas.
 
-El notebook original todavía define la clave en una celda (`'XXXX...'`) y no lee `.env`;
-se cambiará a `load_dotenv()` al resolver el ejercicio. Hasta entonces, no pegues
-una clave real en el notebook: el repositorio es público.
+El notebook lee la clave de `.env` con `load_dotenv()`. No la escribas nunca en el notebook:
+el repositorio es público.
 
 ## Ejecución
 
